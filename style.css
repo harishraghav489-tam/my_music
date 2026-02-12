@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+     background: linear-gradient(
+        135deg,
+        #1db954,
+        #121212,
+        #000000
+    );
+    min-height:100vh;
+    
+}
+.container{
+    background-color: black;
+    color:white;
+    width:100%;
+    position: absolute;
+    height: 100px;
+
+}
+.logo{
+    display:inline-flex;
+    text-align: center;
+    
+}
+.logo img{
+    width:50px;
+    height:50px;
+    margin-top:30px;
+    margin-left:30px;
+}
+.logo h1{
+    font-size:28px;
+    margin-top:30px;
+    margin-left:30px;
+
+}
+ul{
+    display:inline;
+    position: absolute;
+    margin-top:30px;
+    margin-left:60%;
+    cursor:pointer;
+}
+li{
+    display:inline;
+    padding:10px;
+}
+.song{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    margin-top:50px;
+    top: 100px;
+    background-color: black;
+    color:white;
+    transform:scale(1.5) ;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    margin-left: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgb(151, 189, 151);
+    border-top: 2px solid gray;
+    transition: 0.3s;
+
+}
+.song:hover{
+    transform:scale(1.6);
+}
+.heropic{
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index: 2;
+    transform: scale(.5);
+    position:relative;
+    bottom:50px;
+    right:5px;
+    border-radius:20px;
+    box-shadow: 0px 5px 20px rgb(151, 189, 151);
+    transition:0.5s;
+
+}
+.heropic:hover{
+    transform: rotate(6deg)scale(.5);
+}
+.songname{
+    font-size:20px;
+    margin-top:60px;
+    position:absolute;
+    top:140px;
+    display:inline;
+    color:gray;
+    z-index: 3;
+}
+.artist{
+    font-size:10px;
+    margin-top:70px;
+    position:absolute;
+    top:150px;
+    display:inline;
+    color:gray;
+    z-index: 4;
+
+}
+.btn{
+    display:inline;
+    position:absolute;
+    top:250px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+.progress{
+    width:75%;
+    height:3px;
+    background-color:green;
+    border-radius:5px;
+    margin:15px,0;
+    overflow:hidden;
+    position:absolute;
+    align-items:center;
+    top:240px;
+    cursor:pointer;
+
+
+}
+.progressbar{
+    width:60%;
+    height:100%;
+    background-color: white;
+    border-radius:5px;
+    animation:alternate 5s infinite alternate;
+}
